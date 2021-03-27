@@ -7,7 +7,7 @@ students.studentName = "Abhishek Singh Rathore";
 // 3. Using `console.log` log the value of `studentName` key from the `students` object
 console.log(students.studentName);
 
-// 4. Add a another key of the value of variable `batch` in the object with the value of 16.
+// 4. Add a another key of the value of variable `batc h` in the object with the value of 16.
 students.batch = 16;
 
 // 5. Using `console.log` log the value of `batch` key from the `students` object
@@ -26,10 +26,15 @@ students[42] = `The answer to the meaning of life`;
 console.log(students[42]);
 
 // 10. Check the length of object named `students`.
-students.length;
+console.log(students.length);
 
 // 11. Can you define a key of `let or var` in any object? Reason.
+students["let"] = "Strong"; // Keys of object are strings.
 
 // 12. Delete the `isAdult` property from the object `students`. Also, print the object before or after deleting the property
-
+console.log(students);
+delete students.isAdult;
+console.log(students);
 // 13. Update the value of the key batch in the object `students` and print it using `console.log`
+students.batch = 18;
+console.log(student.batch);
