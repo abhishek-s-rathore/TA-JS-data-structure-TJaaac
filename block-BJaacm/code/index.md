@@ -16,9 +16,11 @@ let newUser = user;
 
 <!-- To add this image here use ![name](./hello.jpg) -->
 
+![memory representation](./memory_representation.jpeg);
+
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
+- `user == newUser;` //
 - `user === newUser;`
 - `user.name === newUser.name;`
 - `user.name == newUser.name;`
