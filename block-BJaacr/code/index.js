@@ -25,8 +25,9 @@ console.log(got.houses);
 console.log(got.houses.length);
 
 // 3. Log the name of all houses in got one by one
-console.log(got.houses[0]);
-console.log(got.houses[1]);
+for (let house of got.houses) {
+  console.log(house.name);
+}
 
 // 4. Log the name of all the people in house Starks (index 0) one by one
 for (let i = 0; i < got.houses[0].people.length; i++) {
@@ -75,21 +76,57 @@ for (let i = 0; i < got.houses[1].people.length; i++) {
 }
 
 // 11. Push the name of the houses in an array named `houseNames` and Log the array
+let houseNames = [];
+for (let house of got.houses) {
+  houseNames.push(house.name);
+}
+console.log(houseNames);
 
 // 12. Log the size of people in Starks house
+console.log(got.houses[0].people.length);
 
 // 13. Log the size of people in Lannisters house
+console.log(got.houses[1].people.length);
 
 // 14. Add the name and size of people in an object like {Starks: 4, Lannisters: 6} and log the object
+let obj = {};
+for (let house of got.houses) {
+  obj[house.name] = house.people.length;
+}
+console.log(obj);
 
 // 15. Log the name of all the people of all the houses in got one by one
+for (let house of got.houses) {
+  for (let people of house.people) {
+    console.log(people.name);
+  }
+}
 
 // 16. Push all names into a new array named `allPeople` and log the value array.
+let allPeople = [];
+for (let house of got.houses) {
+  for (let people of house.people) {
+    allPeople.push(people.name);
+  }
+}
 
 // 17. Log the value and length of `allPeople` array created above
+console.log(allPeople, allPeople.length);
 
 // 18. Push all descriptions into an array named `allDescription`
+let allPeopleDescription = [];
+for (let house of got.houses) {
+  for (let people of house.people) {
+    allPeopleDescription.push(people.description);
+  }
+}
 
 // 19. Log the value and length `allDescription`
+console.log(allPeopleDescription, allPeopleDescription.length);
 
 // 20. Only the the description whose length is more than 30. (use .length property on string to get the length)
+for (let description of allPeopleDescription) {
+  if (description.length > 30) {
+    console.log(description);
+  }
+}
