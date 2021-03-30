@@ -25,6 +25,9 @@ Answer the following with reason after going through the above code:
 
 <!-- To add this image here use ![name](./hello.jpg) -->
 
+![Memory Diagram of answer 2](./answer_2.jpg);
+![Memory Diagram of answer 3](./answer_3.jpg);
+
 ```js
 function personDetails(person) {
   person.age = 25;
@@ -33,8 +36,9 @@ function personDetails(person) {
 }
 var person1 = { name: "Alex", age: 30 };
 var person2 = personDetails(person1);
-console.log(person1);
-console.log(person2);
+
+console.log(person1); // { name: "Alex", age: 25 }
+console.log(person2); // { name: "John", age: 50 }
 ```
 
 3. What will be the output of the below code:
@@ -46,6 +50,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push("Robb");
-console.log(user.brothers === brothers); //1. output
-console.log(user.brothers.length === brothers.length); //2. output
+console.log(user.brothers === brothers); //1. true
+console.log(user.brothers.length === brothers.length); //2. true
 ```
